@@ -80,6 +80,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SubstractService.asmx" />
     <Content Include="WeatherForecastService.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -89,6 +90,10 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubstractService.asmx.cs">
+      <DependentUpon>SubstractService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WeatherForecastService.asmx.cs">
       <DependentUpon>WeatherForecastService.asmx</DependentUpon>
       <SubType>Component</SubType>

@@ -91,11 +91,22 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Service References\SubstractService\Client.SubstractService.SubstractTwoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\SubstractService\SubstractService.disco" />
+    <None Include="Service References\SubstractService\configuration91.svcinfo" />
+    <None Include="Service References\SubstractService\configuration.svcinfo" />
+    <None Include="Service References\SubstractService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\WeatherForecast\Client.WeatherForecast.PrintForecastResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Service References\ServiceReference1\AddThreeNumbers.wsdl" />
     <None Include="Service References\ServiceReference2\AddTwoService.wsdl" />
+    <None Include="Service References\SubstractService\SubstractService.wsdl" />
     <None Include="Service References\WeatherForecast\WeatherForecastService.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -112,6 +123,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="SubstractWebForm.aspx" />
     <Content Include="WeatherWebForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -141,10 +153,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\SubstractService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\WeatherForecast\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SubstractWebForm.aspx.cs">
+      <DependentUpon>SubstractWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubstractWebForm.aspx.designer.cs">
+      <DependentUpon>SubstractWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="WeatherWebForm.aspx.cs">
       <DependentUpon>WeatherWebForm.aspx</DependentUpon>
@@ -160,6 +184,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
     <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+    <WCFMetadataStorage Include="Service References\SubstractService\" />
     <WCFMetadataStorage Include="Service References\WeatherForecast\" />
   </ItemGroup>
   <PropertyGroup>
