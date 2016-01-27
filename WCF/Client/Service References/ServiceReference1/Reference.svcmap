@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7e21df57-8ddd-4c22-ab0e-8e0b4affe115" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c7f465da-bdbe-453d-8188-118963c299b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:51685/addtwonumbers.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:51685/AddThreeNumbers.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="addtwonumbers.wsdl" MetadataType="Wsdl" ID="714b877e-65aa-4423-b1e7-9f732ce1f3fb" SourceId="1" SourceUrl="http://localhost:51685/addtwonumbers.asmx?wsdl" />
-    <MetadataFile FileName="addtwonumbers.disco" MetadataType="Disco" ID="6eaffdd0-a39c-4aea-abb6-a331d8196062" SourceId="1" SourceUrl="http://localhost:51685/addtwonumbers.asmx?disco" />
+    <MetadataFile FileName="AddThreeNumbers.wsdl" MetadataType="Wsdl" ID="1e135d32-fc3f-4fa6-9501-931ae2ed71da" SourceId="1" SourceUrl="http://localhost:51685/AddThreeNumbers.asmx?wsdl" />
+    <MetadataFile FileName="AddThreeNumbers.disco" MetadataType="Disco" ID="03ec96dc-44e4-4599-b895-c0325c181ccd" SourceId="1" SourceUrl="http://localhost:51685/AddThreeNumbers.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

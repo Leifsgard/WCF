@@ -1,6 +1,0 @@
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\bin\Debug\WeatherClient.dll.config
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\bin\Debug\WeatherClient.dll
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\bin\Debug\WeatherClient.pdb
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\obj\Debug\WeatherClient.csprojResolveAssemblyReference.cache
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\obj\Debug\WeatherClient.dll
-C:\Users\Rasmus\Desktop\WCF\WCF\WeatherClient\obj\Debug\WeatherClient.pdb

@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Client.AddThreeNumbers {
+namespace Client.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="AddThreeNumbers.WebService1Soap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.WebService1Soap")]
     public interface WebService1Soap {
         
         // CODEGEN: Generating message contract since element name firstNumber from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddThreeNumbers", ReplyAction="*")]
-        Client.AddThreeNumbers.AddThreeNumbersResponse AddThreeNumbers(Client.AddThreeNumbers.AddThreeNumbersRequest request);
+        Client.ServiceReference1.AddThreeNumbersResponse AddThreeNumbers(Client.ServiceReference1.AddThreeNumbersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/AddThreeNumbers", ReplyAction="*")]
-        System.Threading.Tasks.Task<Client.AddThreeNumbers.AddThreeNumbersResponse> AddThreeNumbersAsync(Client.AddThreeNumbers.AddThreeNumbersRequest request);
+        System.Threading.Tasks.Task<Client.ServiceReference1.AddThreeNumbersResponse> AddThreeNumbersAsync(Client.ServiceReference1.AddThreeNumbersRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -30,12 +30,12 @@ namespace Client.AddThreeNumbers {
     public partial class AddThreeNumbersRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddThreeNumbers", Namespace="http://tempuri.org/", Order=0)]
-        public Client.AddThreeNumbers.AddThreeNumbersRequestBody Body;
+        public Client.ServiceReference1.AddThreeNumbersRequestBody Body;
         
         public AddThreeNumbersRequest() {
         }
         
-        public AddThreeNumbersRequest(Client.AddThreeNumbers.AddThreeNumbersRequestBody Body) {
+        public AddThreeNumbersRequest(Client.ServiceReference1.AddThreeNumbersRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -72,12 +72,12 @@ namespace Client.AddThreeNumbers {
     public partial class AddThreeNumbersResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="AddThreeNumbersResponse", Namespace="http://tempuri.org/", Order=0)]
-        public Client.AddThreeNumbers.AddThreeNumbersResponseBody Body;
+        public Client.ServiceReference1.AddThreeNumbersResponseBody Body;
         
         public AddThreeNumbersResponse() {
         }
         
-        public AddThreeNumbersResponse(Client.AddThreeNumbers.AddThreeNumbersResponseBody Body) {
+        public AddThreeNumbersResponse(Client.ServiceReference1.AddThreeNumbersResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -100,12 +100,12 @@ namespace Client.AddThreeNumbers {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface WebService1SoapChannel : Client.AddThreeNumbers.WebService1Soap, System.ServiceModel.IClientChannel {
+    public interface WebService1SoapChannel : Client.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<Client.AddThreeNumbers.WebService1Soap>, Client.AddThreeNumbers.WebService1Soap {
+    public partial class WebService1SoapClient : System.ServiceModel.ClientBase<Client.ServiceReference1.WebService1Soap>, Client.ServiceReference1.WebService1Soap {
         
         public WebService1SoapClient() {
         }
@@ -127,32 +127,32 @@ namespace Client.AddThreeNumbers {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Client.AddThreeNumbers.AddThreeNumbersResponse Client.AddThreeNumbers.WebService1Soap.AddThreeNumbers(Client.AddThreeNumbers.AddThreeNumbersRequest request) {
+        Client.ServiceReference1.AddThreeNumbersResponse Client.ServiceReference1.WebService1Soap.AddThreeNumbers(Client.ServiceReference1.AddThreeNumbersRequest request) {
             return base.Channel.AddThreeNumbers(request);
         }
         
         public int AddThreeNumbers(string firstNumber, string secondNumber, string thirdNumber) {
-            Client.AddThreeNumbers.AddThreeNumbersRequest inValue = new Client.AddThreeNumbers.AddThreeNumbersRequest();
-            inValue.Body = new Client.AddThreeNumbers.AddThreeNumbersRequestBody();
+            Client.ServiceReference1.AddThreeNumbersRequest inValue = new Client.ServiceReference1.AddThreeNumbersRequest();
+            inValue.Body = new Client.ServiceReference1.AddThreeNumbersRequestBody();
             inValue.Body.firstNumber = firstNumber;
             inValue.Body.secondNumber = secondNumber;
             inValue.Body.thirdNumber = thirdNumber;
-            Client.AddThreeNumbers.AddThreeNumbersResponse retVal = ((Client.AddThreeNumbers.WebService1Soap)(this)).AddThreeNumbers(inValue);
+            Client.ServiceReference1.AddThreeNumbersResponse retVal = ((Client.ServiceReference1.WebService1Soap)(this)).AddThreeNumbers(inValue);
             return retVal.Body.AddThreeNumbersResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Client.AddThreeNumbers.AddThreeNumbersResponse> Client.AddThreeNumbers.WebService1Soap.AddThreeNumbersAsync(Client.AddThreeNumbers.AddThreeNumbersRequest request) {
+        System.Threading.Tasks.Task<Client.ServiceReference1.AddThreeNumbersResponse> Client.ServiceReference1.WebService1Soap.AddThreeNumbersAsync(Client.ServiceReference1.AddThreeNumbersRequest request) {
             return base.Channel.AddThreeNumbersAsync(request);
         }
         
-        public System.Threading.Tasks.Task<Client.AddThreeNumbers.AddThreeNumbersResponse> AddThreeNumbersAsync(string firstNumber, string secondNumber, string thirdNumber) {
-            Client.AddThreeNumbers.AddThreeNumbersRequest inValue = new Client.AddThreeNumbers.AddThreeNumbersRequest();
-            inValue.Body = new Client.AddThreeNumbers.AddThreeNumbersRequestBody();
+        public System.Threading.Tasks.Task<Client.ServiceReference1.AddThreeNumbersResponse> AddThreeNumbersAsync(string firstNumber, string secondNumber, string thirdNumber) {
+            Client.ServiceReference1.AddThreeNumbersRequest inValue = new Client.ServiceReference1.AddThreeNumbersRequest();
+            inValue.Body = new Client.ServiceReference1.AddThreeNumbersRequestBody();
             inValue.Body.firstNumber = firstNumber;
             inValue.Body.secondNumber = secondNumber;
             inValue.Body.thirdNumber = thirdNumber;
-            return ((Client.AddThreeNumbers.WebService1Soap)(this)).AddThreeNumbersAsync(inValue);
+            return ((Client.ServiceReference1.WebService1Soap)(this)).AddThreeNumbersAsync(inValue);
         }
     }
 }

@@ -10,7 +10,7 @@
 namespace Client {
     
     
-    public partial class AddTwoNumbers {
+    public partial class AddTwoNumbersWebForm {
         
         /// <summary>
         /// form1 control.

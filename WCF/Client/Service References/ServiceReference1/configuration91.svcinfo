@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="3ZRgOc9hQ5AWdoDVQKXDoUvDmvM=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ckfPhKAv4qTVHVcKNN2P78bArN8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="WebService1Soap">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WebService1Soap" contract="AddThreeNumbers.WebService1Soap" bindingType="basicHttpBinding" address="http://localhost:51685/AddThreeNumbers.asmx" bindingConfiguration="WebService1Soap">
+    <endpoint name="WebService1Soap" contract="ServiceReference1.WebService1Soap" bindingType="basicHttpBinding" address="http://localhost:51685/AddThreeNumbers.asmx" bindingConfiguration="WebService1Soap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:51685/AddThreeNumbers.asmx</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>WebService1Soap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AddThreeNumbers.WebService1Soap</serializedValue>
+          <serializedValue>ServiceReference1.WebService1Soap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

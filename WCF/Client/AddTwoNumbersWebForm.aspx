@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddTwoNumbers.aspx.cs" Inherits="Client.AddTwoNumbers" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddTwoNumbersWebForm.aspx.cs" Inherits="Client.AddTwoNumbersWebForm" %>
 
 <!DOCTYPE html>
 
@@ -9,10 +9,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    
     </div>
     </form>
 </body>
