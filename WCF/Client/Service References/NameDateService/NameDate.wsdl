@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PrintDateForName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nameInput" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrintDateForNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrintDateForNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PrintDateForNameSoapIn">
+    <wsdl:part name="parameters" element="tns:PrintDateForName" />
+  </wsdl:message>
+  <wsdl:message name="PrintDateForNameSoapOut">
+    <wsdl:part name="parameters" element="tns:PrintDateForNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NameDateSoap">
+    <wsdl:operation name="PrintDateForName">
+      <wsdl:input message="tns:PrintDateForNameSoapIn" />
+      <wsdl:output message="tns:PrintDateForNameSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NameDateSoap" type="tns:NameDateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintDateForName">
+      <soap:operation soapAction="http://tempuri.org/PrintDateForName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NameDateSoap12" type="tns:NameDateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrintDateForName">
+      <soap12:operation soapAction="http://tempuri.org/PrintDateForName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NameDate">
+    <wsdl:port name="NameDateSoap" binding="tns:NameDateSoap">
+      <soap:address location="http://localhost:51685/NameDate.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NameDateSoap12" binding="tns:NameDateSoap12">
+      <soap12:address location="http://localhost:51685/NameDate.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

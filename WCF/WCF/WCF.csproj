@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddTwoService.asmx" />
+    <Content Include="NameDate.asmx" />
+    <Content Include="NameDays.txt" />
     <Content Include="packages.config" />
     <Content Include="AddThreeNumbers.asmx" />
     <None Include="Web.Debug.config">
@@ -87,6 +89,10 @@
   <ItemGroup>
     <Compile Include="AddTwoService.asmx.cs">
       <DependentUpon>AddTwoService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NameDate.asmx.cs">
+      <DependentUpon>NameDate.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
