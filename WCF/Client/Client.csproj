@@ -68,8 +68,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddTwoNumbers.aspx" />
     <Content Include="packages.config" />
-    <None Include="Service References\ServiceReference1\WeatherForecastService.wsdl" />
+    <Content Include="Service References\WeatherForecast\Client.WeatherForecast.PrintForecastResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\WeatherForecast\WeatherForecastService.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -78,13 +82,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\ServiceReference1\Client.ServiceReference1.PrintForecastResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\ServiceReference1\WeatherForecastService.disco" />
-    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
-    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
-    <None Include="Service References\ServiceReference1\Reference.svcmap">
+    <None Include="Service References\WeatherForecast\WeatherForecastService.disco" />
+    <None Include="Service References\WeatherForecast\configuration91.svcinfo" />
+    <None Include="Service References\WeatherForecast\configuration.svcinfo" />
+    <None Include="Service References\WeatherForecast\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -92,8 +93,15 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTwoNumbers.aspx.cs">
+      <DependentUpon>AddTwoNumbers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTwoNumbers.aspx.designer.cs">
+      <DependentUpon>AddTwoNumbers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ServiceReference1\Reference.cs">
+    <Compile Include="Service References\WeatherForecast\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -110,7 +118,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\WeatherForecast\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

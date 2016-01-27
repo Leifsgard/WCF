@@ -66,7 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addtwonumbers.asmx" />
     <Content Include="packages.config" />
+    <Content Include="AddThreeNumbers.asmx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -79,9 +81,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addtwonumbers.asmx.cs">
+      <DependentUpon>addtwonumbers.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WeatherForecastService.asmx.cs">
       <DependentUpon>WeatherForecastService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AddThreeNumbers.asmx.cs">
+      <DependentUpon>AddThreeNumbers.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
