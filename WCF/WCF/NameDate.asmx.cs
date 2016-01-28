@@ -21,7 +21,8 @@ namespace WCF
         [WebMethod]
         public string PrintDateForName(string nameInput)
         {
-            var nameDays = File.ReadAllLines(@"C:\Users\Rasmus\Desktop\WCF\WCF\WCF\NameDays.txt");
+            // Ändra platsen genom att dra filen "NAMEDAYS.TXT" i Resources och ersätt det nedanför.
+            var nameDays = File.ReadAllLines(  @"C:\Users\Rasmus\Desktop\WCF\WCF\WCF\Resources\NameDays.txt");
             var date = "";
             foreach (var nameSplit in nameDays.Select(nameDay => nameDay.Split(' ')).Where(nameSplit => nameSplit.Contains(nameInput)))
             {

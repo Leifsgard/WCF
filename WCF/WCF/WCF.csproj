@@ -70,8 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddTwoService.asmx" />
+    <Content Include="FamousPeopleDiedInPlanecrash.asmx" />
     <Content Include="NameDate.asmx" />
-    <Content Include="NameDays.txt" />
+    <Content Include="Resources\FamousPeopleDiedInPlaneCrash.txt" />
+    <Content Include="Resources\NameDays.txt" />
     <Content Include="packages.config" />
     <Content Include="AddThreeNumbers.asmx" />
     <None Include="Web.Debug.config">
@@ -89,6 +91,10 @@
   <ItemGroup>
     <Compile Include="AddTwoService.asmx.cs">
       <DependentUpon>AddTwoService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FamousPeopleDiedInPlanecrash.asmx.cs">
+      <DependentUpon>FamousPeopleDiedInPlanecrash.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="NameDate.asmx.cs">

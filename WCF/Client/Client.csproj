@@ -70,11 +70,23 @@
   <ItemGroup>
     <Content Include="AddThreeNumbersWebForm.aspx" />
     <Content Include="AddTwoNumbersWebForm.aspx" />
+    <Content Include="FamousPeopleWebForm.aspx" />
     <Content Include="NameDateWebForm.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Service References\FamousPeopleService\Client.FamousPeopleService.GetPersonFromListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\FamousPeopleService\FamousPeopleDiedInPlanecrash.disco" />
+    <None Include="Service References\FamousPeopleService\configuration91.svcinfo" />
+    <None Include="Service References\FamousPeopleService\configuration.svcinfo" />
+    <None Include="Service References\FamousPeopleService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Service References\NameDateService\Client.NameDateService.PrintDateForNameResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Service References\FamousPeopleService\FamousPeopleDiedInPlanecrash.wsdl" />
     <None Include="Service References\NameDateService\NameDate.wsdl" />
     <None Include="Service References\ServiceReference1\AddThreeNumbers.disco" />
     <None Include="Service References\NameDateService\NameDate.disco" />
@@ -154,6 +166,13 @@
     <Compile Include="AddTwoNumbersWebForm.aspx.designer.cs">
       <DependentUpon>AddTwoNumbersWebForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FamousPeopleWebForm.aspx.cs">
+      <DependentUpon>FamousPeopleWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamousPeopleWebForm.aspx.designer.cs">
+      <DependentUpon>FamousPeopleWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="NameDateWebForm.aspx.cs">
       <DependentUpon>NameDateWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,6 +181,11 @@
       <DependentUpon>NameDateWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\FamousPeopleService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\NameDateService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -206,6 +230,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FamousPeopleService\" />
     <WCFMetadataStorage Include="Service References\NameDateService\" />
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
     <WCFMetadataStorage Include="Service References\ServiceReference2\" />
