@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="AddThreeNumbersWebForm.aspx" />
     <Content Include="AddTwoNumbersWebForm.aspx" />
+    <Content Include="FamousPassedAway2010.aspx" />
     <Content Include="FamousPeopleWebForm.aspx" />
     <Content Include="NameDateWebForm.aspx" />
     <Content Include="packages.config" />
@@ -88,11 +89,22 @@
     </Content>
     <None Include="Service References\FamousPeopleService\FamousPeopleDiedInPlanecrash.wsdl" />
     <None Include="Service References\NameDateService\NameDate.wsdl" />
+    <Content Include="Service References\PeoplePassedAway2010Service\Client.PeoplePassedAway2010Service.PersonWhoPassedAwayResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\PeoplePassedAway2010Service\PeopleWhoPassedAway2010.wsdl" />
     <None Include="Service References\ServiceReference1\AddThreeNumbers.disco" />
     <None Include="Service References\NameDateService\NameDate.disco" />
     <None Include="Service References\NameDateService\configuration91.svcinfo" />
     <None Include="Service References\NameDateService\configuration.svcinfo" />
     <None Include="Service References\NameDateService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PeoplePassedAway2010Service\PeopleWhoPassedAway2010.disco" />
+    <None Include="Service References\PeoplePassedAway2010Service\configuration91.svcinfo" />
+    <None Include="Service References\PeoplePassedAway2010Service\configuration.svcinfo" />
+    <None Include="Service References\PeoplePassedAway2010Service\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -166,6 +178,13 @@
     <Compile Include="AddTwoNumbersWebForm.aspx.designer.cs">
       <DependentUpon>AddTwoNumbersWebForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FamousPassedAway2010.aspx.cs">
+      <DependentUpon>FamousPassedAway2010.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamousPassedAway2010.aspx.designer.cs">
+      <DependentUpon>FamousPassedAway2010.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FamousPeopleWebForm.aspx.cs">
       <DependentUpon>FamousPeopleWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -187,6 +206,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\NameDateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PeoplePassedAway2010Service\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -232,6 +256,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\FamousPeopleService\" />
     <WCFMetadataStorage Include="Service References\NameDateService\" />
+    <WCFMetadataStorage Include="Service References\PeoplePassedAway2010Service\" />
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
     <WCFMetadataStorage Include="Service References\ServiceReference2\" />
     <WCFMetadataStorage Include="Service References\SubstractService\" />

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="PersonWhoPassedAway">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="date" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PersonWhoPassedAwayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonWhoPassedAwayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PersonWhoPassedAwaySoapIn">
+    <wsdl:part name="parameters" element="tns:PersonWhoPassedAway" />
+  </wsdl:message>
+  <wsdl:message name="PersonWhoPassedAwaySoapOut">
+    <wsdl:part name="parameters" element="tns:PersonWhoPassedAwayResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PeopleWhoPassedAway2010Soap">
+    <wsdl:operation name="PersonWhoPassedAway">
+      <wsdl:input message="tns:PersonWhoPassedAwaySoapIn" />
+      <wsdl:output message="tns:PersonWhoPassedAwaySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PeopleWhoPassedAway2010Soap" type="tns:PeopleWhoPassedAway2010Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PersonWhoPassedAway">
+      <soap:operation soapAction="http://tempuri.org/PersonWhoPassedAway" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PeopleWhoPassedAway2010Soap12" type="tns:PeopleWhoPassedAway2010Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PersonWhoPassedAway">
+      <soap12:operation soapAction="http://tempuri.org/PersonWhoPassedAway" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PeopleWhoPassedAway2010">
+    <wsdl:port name="PeopleWhoPassedAway2010Soap" binding="tns:PeopleWhoPassedAway2010Soap">
+      <soap:address location="http://localhost:51685/PeopleWhoPassedAway2010.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PeopleWhoPassedAway2010Soap12" binding="tns:PeopleWhoPassedAway2010Soap12">
+      <soap12:address location="http://localhost:51685/PeopleWhoPassedAway2010.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

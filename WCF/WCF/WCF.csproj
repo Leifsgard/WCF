@@ -72,6 +72,7 @@
     <Content Include="AddTwoService.asmx" />
     <Content Include="FamousPeopleDiedInPlanecrash.asmx" />
     <Content Include="NameDate.asmx" />
+    <Content Include="PeopleWhoPassedAway2010.asmx" />
     <Content Include="Resources\FamousPeopleDiedInPlaneCrash.txt" />
     <Content Include="Resources\NameDays.txt" />
     <Content Include="packages.config" />
@@ -84,6 +85,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\PeopleThatPassedAway2010.txt" />
     <Content Include="SubstractService.asmx" />
     <Content Include="WeatherForecastService.asmx" />
     <Content Include="Web.config" />
@@ -99,6 +101,10 @@
     </Compile>
     <Compile Include="NameDate.asmx.cs">
       <DependentUpon>NameDate.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PeopleWhoPassedAway2010.asmx.cs">
+      <DependentUpon>PeopleWhoPassedAway2010.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
